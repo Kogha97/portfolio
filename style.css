@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* background color here */
+html{
+    background-color: rgb(22, 22, 56);
+    font-size: 10px;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+.sticky-side{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    width: 5vw;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    font-size: 2rem;
+    z-index: 1;
+}
+.socialmedia{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: lightgray;
+    padding-bottom: 5vh;
+ 
+}
+i:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease;
+}
+/* header color here */
+header{
+    background-color: rgba(47, 47, 83, 0.452);
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5vw;
+    padding-top: 2vh;
+}
+ul{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    transition: color 0.3s ease;
+}
+button{
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;;
+}
+button:hover{
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+    transition: 1s ease;
+    font-family: 'Quicksand', sans-serif;;
+    
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;;
+}
+a:hover{
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease;
+}
+
+/* center introduction, used a lot of viewport to make the text responsive
+    needs adding responsiveness to font to make it smaller when displays goes lower */
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    left:20%;
+    padding-top: 30vh;
+    gap: 20px;
+    font-family: 'Quicksand', sans-serif;;
+    width: 35vw;
+    height: 120vh;
+}
+.introduction h1{
+    color:whitesmoke ;
+    font-size: 2rem;
+    width: 100%;
+}
+.introduction h2{
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    width: 100%;
+}
+.introduction h3{
+    color: whitesmoke;
+    font-size: 3rem;
+    width: 100%;
+}
+.introduction p{
+    color: whitesmoke;
+    font-size: 2rem;
+    width: 100%;
+    text-align: justify;
+}
+.about-me{
+    width: 60vw;
+    position: relative;
+    left: 20%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+.about-me h2{
+    font-family: 'Quicksand', sans-serif;;
+    font-size: 3rem;
+    padding-bottom: 5vh;
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+
+}
+.about-me p{
+    font-family: 'Quicksand', sans-serif;
+    font-size:  1.6rem;
+    width: 60%;
+    text-align: justify;
+}
+.about-img img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+.about-me ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 5vh;
+}
+.hard-skills ul{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3,35px);
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.hard-skills ul li, .projectSkills li{
+    width: auto;
+    border: 3px solid  rgba(47, 47, 83, 0.452);
+    background-color: rgba(47, 47, 83, 0.452);
+    border-radius: 9999px;
+    font-size: 1.6rem;
+
+}
+.hard-skills ul li:hover, .projectSkills li:hover{
+    border: 3px solid whitesmoke;
+    width: auto;
+    background-color: whitesmoke;
+    color: rgba(47, 47, 83, 0.452);
+    border-radius: 9999px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+.projectSkills{
+    gap:20px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 100vw;
+    align-items: center;
+    gap: 100px;
+}
+.projects h2{
+    font-family: 'Quicksand', sans-serif;;
+    font-size: 4rem;
+    padding-bottom: 2vh;
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 60%;
+}
+.project h2{
+    font-size: 2rem;
+}
+.project p{
+    font-size: 1.5rem;
+}
+.text-container{
+    width: 25vw;
+}
+.project img{
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.contact-us {
+    width: 100dvw;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us h2 {
+    font-family: 'Quicksand', sans-serif;;
+    font-size: 4rem;
+    padding-bottom: 5vh;
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-us h3 {
+    font-family: 'Quicksand', sans-serif;;
+    font-size: 1.5rem;
+    width: 35vw;
+    text-align: justify;
+    color: whitesmoke;
+    line-height: 2.5rem;
+    font-weight: lighter;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    padding-top: 5vh;
+}
+
+input {
+    height: 4vh;
+}
+/*  */
+.contact-us form button {
+    min-width: 4vw;
+    max-width: 6vw;
+    min-height: 35px;
+    align-self: center;
+}
