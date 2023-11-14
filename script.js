@@ -7,3 +7,14 @@ function openCV(){
 
     window.open(cvPath, '_blank')
 }
+
+const logoButton = document.querySelector('.logo')
+
+logoButton.addEventListener('click', scrollUp)
+
+function scrollUp(){
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    })
+}

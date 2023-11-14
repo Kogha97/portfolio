@@ -15,6 +15,7 @@ html{
     height: 40px;
     width: 40px;
     object-fit: cover;
+    cursor: pointer;
 }
 .sticky-side{
     position: fixed;
@@ -284,4 +285,9 @@ input {
     max-width: 6vw;
     min-height: 35px;
     align-self: center;
+}
+
+
+@media{
+    
 }
