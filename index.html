@@ -22,7 +22,21 @@
                 <li><a class="p-1 rounded" href="#simple-list-item-4">Contact</a></li>
                 <li><button type="button" class="resume" id="resume">Resume</button></li>
             </ul>
-         </nav> 
+         </nav>
+         <div class="navbar-smallscreen">
+            <label class="hamburger-menu">
+                <input type="checkbox" />
+              </label>
+              <aside class="sidebar">
+                <nav class="navbar-hamburger">
+                    <ul>
+                    <li><a class="p-1 rounded" href="#simple-list-item-1">About Me</a></li>
+
+                    <li><a class="p-1 rounded" href="#simple-list-item-3">Projects</a></li>
+                    <li><a class="p-1 rounded" href="#simple-list-item-4">Contact</a></li>
+                    <li><button type="button" class="resume" id="resume2">Resume</button></li>
+                    </ul>
+         </div>
     </header>
     <div class="sticky-side">
         <div class="logo"><img src="./images/J-Logo.svg" alt="J logo"></div>
@@ -44,7 +58,7 @@
         </section>
         <!-- possible adding a button to take the user somewhere, not sure where yet -->
         <section class="about-me" id="simple-list-item-1">
-            <div>
+            <div class="meContainer">
                 <h2>About me</h2>
                 <p>Hello, let me tell you my story . . . <br><br>In 2017, I embarked on my journey into the world of technology by enrolling in a Computer Engineering BSc program. At that time, I had always been a enthusiastic with computers and was deeply fascinated by the development of technology. However, as we often find in life, professors and experiences can either ignite or extinguish our passion. Unfortunately, in my case, it was the latter, I found myself disliking it and questioning my path. <br><br> In the midst of my academic journey, I decided to follow other passions of mine and ended up graduating with Honors, 2020, in Physical Activity and Lifestyle. <br><br>Working in the lifestyle industry helped me rediscover my true passion - coding. It became clear to me that technology and software development were not just interests but a calling. I realized that my love for computer was the path all along. <br><br>After this discover I have started to work on my skills, such has:</p>
                 <div class="hard-skills">
@@ -68,6 +82,7 @@
             <h2>Projects</h2>
 
             <div class="project">
+
                 <div class="text-container">
                     <h2>Lorem Ipsum Website</h2>
                     <p>This was my first ever project, to recreate a already made website, with this project I learned a lot a valuable skills and worked on the basics of HTML and CSS, such has padding, backgound images, flexbox and grid containers. </p>
@@ -126,16 +141,18 @@
                         <li>CSS</li>
                         <li>GitHub</li>
                         <li>JavaScript</li>
-                    </ul></div>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </section> 
+        
         <section class="contact-us" id="simple-list-item-4">
             <h2>How can you reach me?</h2>
             <h3>I'm always on the lookout for exciting opportunities and new challenges. I thrive on pushing boundaries and exploring the uncharted. I'm excited to see what the future holds and welcome any chance to grow and learn. Please feel free to reach out if you have any exciting projects or opportunities in mind.</h3>
             <form action="POST">
                 <input type="text" placeholder="First and Last name"><br><br>
                 <input type="text" placeholder="Email"><br><br>
-                <textarea name="" id="" cols="0" rows="15" placeholder="Message"></textarea><br><br>
+                <textarea name="" id="" cols="0" rows="12" placeholder="Message"></textarea><br><br>
                 <button type="submit">Submit</button>
             </form>
         </section>

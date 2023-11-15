@@ -8,6 +8,10 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "compat-api/css": "off",
+    "axe/parsing": "off",
+    "axe/forms": "off",
+    "axe/text-alternatives": "off"
   }
 }
