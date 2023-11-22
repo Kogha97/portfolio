@@ -193,6 +193,7 @@ a:hover{
     background-color: rgba(47, 47, 83, 0.452);
     border-radius: 9999px;
     font-size: 1.6rem;
+    padding: 2px;
 
 }
 .hard-skills ul li:hover, .projectSkills li:hover{
@@ -203,6 +204,7 @@ a:hover{
     border-radius: 9999px;
     font-weight: bold;
     transition: 0.5s ease-in-out;
+    padding: 2px;
 }
 .projectSkills{
     gap:20px;
@@ -245,6 +247,7 @@ a:hover{
     width: 20vw;
     height: 25vh;
     object-fit: cover; 
+    border: 1px whitesmoke solid;
 }
 
 .contact-us {
